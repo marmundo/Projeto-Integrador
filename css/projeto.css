@@ -123,6 +123,15 @@ body {
 	color: #89867e;
 }
 
+#submenu{
+	display: none;
+}
+
+#submenu1{
+	display: none;
+}
+
+
 @media screen and (max-width: 1025px) {
 	.container > header {
 		margin: 0 auto;

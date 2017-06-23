@@ -12,8 +12,37 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/projeto.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="js/modernizr.custom.js"></script>
+
+
+	<script type="text/javascript">
+		function mostrar(id) {
+			document.getElementById(id).src="setabaixo.png";
+			if (document.getElementById(id).style.display == 'none') {
+
+				document.getElementById(id).style.display = 'block';
+				document.getElementById(id).src="setacima.png";
+			}else{
+				document.getElementById(id).style.display = 'none';
+			}
+
+		}
+
+		function mostrarimg(id) {
+			if (document.getElementById(id).style.display == 'none') {
+
+				
+			}else{
+				document.getElementById(id).style.display = 'none';
+			}
+
+		}
+		</script>
+
+
 </head>
 <body>
 	<div class="container">
@@ -23,25 +52,45 @@
 				<nav class="gn-menu-wrapper">
 					<div class="gn-scroller">
 						<ul class="gn-menu">
+
+							<!-- O Projeto -->
 							<li>
-								<a class="gn-icon">
-									<i class="material-icons"> &nbsp; web_asset &nbsp;</i> &nbsp; O Projeto Integrador </a></li>
+								<a class="gn-icon" onclick="mostrar('submenu')"> <i class="material-icons"> &nbsp; web_asset &nbsp;</i> &nbsp; O Projeto Integrador &nbsp; &nbsp; <img id="ic" src="setacima.png" width="15px"> <!-- <i  class="fa fa-arrow-down"></i> --> </i></a>
 								<ul class="gn-submenu">
-									<li><a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; group &nbsp;</i> &nbsp; Equipes</a></li>
-									<li><a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; airplay &nbsp;</i> &nbsp; Professores Envolvidos(Doscentes)</a></li>
+
+								<div id="submenu">
+									<li>
+
+										<a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; group &nbsp;</i> &nbsp; Equipes</a>
+
+
+									</li>
+									<li>
+
+										<a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; airplay &nbsp;</i> &nbsp; Professores Envolvidos(Doscentes)</a>
+
+
+									</li>
+
+								</div>	
 								</ul>
+							</li>
 
 							<!-- O Projeto -->
 
-							<li><a class="gn-icon gn-icon-cog">Agendar Visita</a></li>
+							
 
 
-
+							<li><a class="gn-icon gn-icon-cog" onclick="mostrar('submenu1')">Multimídias &nbsp; &nbsp;<i class="fa fa-arrow-down"></i></a></li>
 							<ul class="gn-submenu">
-								<li><a class="gn-icon gn-icon-article">Articles</a></li>
-								<li><a class="gn-icon gn-icon-pictures">Images</a></li>
+							<div id="submenu1">
+								<li><a class="gn-icon gn-icon-article">Artigos</a></li>
+								<li><a class="gn-icon gn-icon-pictures">Imagens</a></li>
 								<li><a class="gn-icon gn-icon-videos">Videos</a></li>
+							</div>	
 							</ul>
+
+							<li><a class="gn-icon gn-icon-cog">Agendar Visita</a></li>
 
 							<li><a class="gn-icon gn-icon-help">Ajuda</a></li>
 							<li>

@@ -14,6 +14,21 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="js/modernizr.custom.js"></script>
+
+	<script type="text/javascript">
+		function mostrar(id) {
+			if (document.getElementById('id').style.display == 'none') {
+
+				document.getElementById('id').style.display = 'block';
+			}else{
+				document.getElementById('id').style.display = 'none';
+			}
+
+
+		}
+
+	</script>
+
 </head>
 <body>
 	<div class="container">
@@ -33,8 +48,10 @@
 
 							<!-- O Projeto -->
 							<li>
-								<a class="gn-icon"> <i class="material-icons"> &nbsp; web_asset &nbsp;</i> &nbsp; O Projeto Integrador </a>
+								<a class="gn-icon" onclick="mostrar('submenu')"> <i class="material-icons"> &nbsp; web_asset &nbsp;</i> &nbsp; O Projeto Integrador <span  class="caret"></span> </a>
 								<ul class="gn-submenu">
+
+								<div id="submenu">
 									<li>
 
 										<a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; group &nbsp;</i> &nbsp; Equipes</a>
@@ -47,6 +64,8 @@
 
 
 									</li>
+
+								</div>	
 								</ul>
 							</li>
 							<!-- O Projeto -->
