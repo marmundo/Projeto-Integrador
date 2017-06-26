@@ -317,12 +317,41 @@ input.gn-search:focus {
 		height: 60px
 }
 
+.icon-bar {
+    width: 100%;
+    background-color: #555; 
+    overflow: auto; 
+    margin-top: 30px;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+#imagem{
+	display: inline-block;
+	margin-left: 30%;
+	margin-top: 30px;
+}
+
 @media screen and (max-width: 422px) { 
 	.gn-menu-wrapper.gn-open-all {
 			-webkit-transform: translateX(0px);
 			-moz-transform: translateX(0px);
 			transform: translateX(0px);
 			width: 100%;
+	}
+
+	#imagem {
+		height: 150px;
+		width: 320px;
+		margin-left: 10%;
 	}
 
 	.gn-menu-wrapper.gn-open-all .gn-scroller {

@@ -8,12 +8,55 @@
 	<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
 	<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
 	<meta name="author" content="Codrops" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/projeto.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="js/modernizr.custom.js"></script>
+
+	<script type="text/javascript">
+		function mudaImagem(id){
+			if(id == 1){
+				document.getElementById("imagem").src = "img/imagemRedes.jpg"
+				document.getElementById("id1").style.backgroundColor = "rgb(50, 178, 221)"
+				document.getElementById("id2").style.backgroundColor = "#555"
+				document.getElementById("id3").style.backgroundColor = "#555"
+				document.getElementById("id4").style.backgroundColor = "#555"
+				document.getElementById("id5").style.backgroundColor = "#555"
+			}else if(id == 2){
+				document.getElementById("imagem").src = "img/imagemBanco.jpg"
+				document.getElementById("id2").style.backgroundColor = "rgb(50, 178, 221)"
+				document.getElementById("id1").style.backgroundColor = "#555"
+				document.getElementById("id3").style.backgroundColor = "#555"
+				document.getElementById("id4").style.backgroundColor = "#555"
+				document.getElementById("id5").style.backgroundColor = "#555"
+			}else if(id == 3){
+				document.getElementById("imagem").src = "img/imagemManu.jpg"
+				document.getElementById("id3").style.backgroundColor = "rgb(50, 178, 221)"
+				document.getElementById("id1").style.backgroundColor = "#555"
+				document.getElementById("id2").style.backgroundColor = "#555"
+				document.getElementById("id4").style.backgroundColor = "#555"
+				document.getElementById("id5").style.backgroundColor = "#555"
+			}else if(id == 4){
+				document.getElementById("imagem").src = "img/imagemSite.jpg"
+				document.getElementById("id4").style.backgroundColor = "rgb(50, 178, 221)"
+				document.getElementById("id1").style.backgroundColor = "#555"
+				document.getElementById("id2").style.backgroundColor = "#555"
+				document.getElementById("id3").style.backgroundColor = "#555"
+				document.getElementById("id5").style.backgroundColor = "#555"
+			}else if(id == 5){
+				document.getElementById("imagem").src = "img/imagemManual.jpg"
+				document.getElementById("id5").style.backgroundColor = "rgb(50, 178, 221)"
+				document.getElementById("id1").style.backgroundColor = "#555"
+				document.getElementById("id2").style.backgroundColor = "#555"
+				document.getElementById("id3").style.backgroundColor = "#555"
+				document.getElementById("id4").style.backgroundColor = "#555"
+			}
+		}
+	</script>
+
 </head>
 <body>
 	<div class="container">
@@ -24,37 +67,17 @@
 					<div class="gn-scroller">
 						<ul class="gn-menu">
 
-							<!-- Pesquisar
-								<li class="gn-search-item">
-									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
-								</li>
-							-->
-
 							<!-- O Projeto -->
 							<li>
 								<a class="gn-icon"> <i class="material-icons"> &nbsp; web_asset &nbsp;</i> &nbsp; O Projeto Integrador </a>
 								<ul class="gn-submenu">
-									<li>
-
-										<a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; group &nbsp;</i> &nbsp; Equipes</a>
-
-
-									</li>
-									<li>
-
-										<a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; airplay &nbsp;</i> &nbsp; Professores Envolvidos(Doscentes)</a>
-
-
-									</li>
+									<li><a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; group &nbsp;</i> &nbsp; Equipes</a></li>
+									<li><a href="https://www.facebook.com/" target="_blank"><i class="material-icons"> &nbsp; airplay &nbsp;</i> &nbsp; Professores Envolvidos(Doscentes)</a></li>
 								</ul>
 							</li>
 							<!-- O Projeto -->
 
-							<li><a class="gn-icon gn-icon-cog">Agendar Visita</a></li>
-
-
-
+							<li><a class="gn-icon gn-icon-cog">Agendar Visita</a></li>	
 							<ul class="gn-submenu">
 								<li><a class="gn-icon gn-icon-article">Articles</a></li>
 								<li><a class="gn-icon gn-icon-pictures">Images</a></li>
@@ -75,6 +98,15 @@
 		<!-- Corpo da Página -->
 		<div id="corpo" class="container">
 			<h1>Equipes</h1>
+
+			<div class="icon-bar">
+			  <a id="id1" href="#" title="Redes de Computadores" onclick="mudaImagem(1)"><i class="fa fa-podcast" aria-hidden="true"></i></i></a> 
+			  <a id="id2" href="#" title="Programação com Bando de Dados" onclick="mudaImagem(2)"><i class="fa fa-folder-open" aria-hidden="true"></i></a> 
+			  <a id="id3" href="#" title="Manutenção de Computadores" onclick="mudaImagem(3)"><i class="fa fa-wrench" aria-hidden="true"></i></i></a> 
+			  <a id="id4" href="#" title="Autoria Web" onclick="mudaImagem(4)"><i class="fa fa-file-code-o" aria-hidden="true"></i></i></a>
+			  <a id="id5" href="#" title="Manual do Projeto" onclick="mudaImagem(5)"><i class="fa fa-book" aria-hidden="true"></i></a>
+			</div>
+			<img id="imagem" src="img/projeto.png">
 		</div>
 	</div><!-- /container -->
 	<script src="js/classie.js"></script>
