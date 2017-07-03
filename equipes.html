@@ -20,6 +20,7 @@
 		function mudaImagem(id){
 			if(id == 1){
 				document.getElementById("imagem").src = "img/imagemRedes.jpg"
+				document.getElementById("teste").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Uma rede de computadores é formada por um conjunto de máquinas eletrônicas com processadores capazes de trocar informações e partilhar recursos, interligados por um sub-sistema de comunicação, ou seja, é quando há pelo menos dois ou mais computadores, e outros dispositivos interligados entre si de modo a poderem compartilhar recursos físicos e lógicos, estes podem ser do tipo: dados, impressoras, mensagens (e-mails),entre outros."
 				document.getElementById("id1").style.backgroundColor = "rgb(50, 178, 221)"
 				document.getElementById("id2").style.backgroundColor = "#555"
 				document.getElementById("id3").style.backgroundColor = "#555"
@@ -27,6 +28,7 @@
 				document.getElementById("id5").style.backgroundColor = "#555"
 			}else if(id == 2){
 				document.getElementById("imagem").src = "img/imagemBanco.jpg"
+				document.getElementById("teste").innerHTML = "Programação com Acesso a Banco de Dados"
 				document.getElementById("id2").style.backgroundColor = "rgb(50, 178, 221)"
 				document.getElementById("id1").style.backgroundColor = "#555"
 				document.getElementById("id3").style.backgroundColor = "#555"
@@ -34,6 +36,7 @@
 				document.getElementById("id5").style.backgroundColor = "#555"
 			}else if(id == 3){
 				document.getElementById("imagem").src = "img/imagemManu.jpg"
+				document.getElementById("teste").innerHTML = "Manutenção de Computadores"
 				document.getElementById("id3").style.backgroundColor = "rgb(50, 178, 221)"
 				document.getElementById("id1").style.backgroundColor = "#555"
 				document.getElementById("id2").style.backgroundColor = "#555"
@@ -41,6 +44,7 @@
 				document.getElementById("id5").style.backgroundColor = "#555"
 			}else if(id == 4){
 				document.getElementById("imagem").src = "img/imagemSite.jpg"
+				document.getElementById("teste").innerHTML = "Autoria WEB"
 				document.getElementById("id4").style.backgroundColor = "rgb(50, 178, 221)"
 				document.getElementById("id1").style.backgroundColor = "#555"
 				document.getElementById("id2").style.backgroundColor = "#555"
@@ -48,6 +52,7 @@
 				document.getElementById("id5").style.backgroundColor = "#555"
 			}else if(id == 5){
 				document.getElementById("imagem").src = "img/imagemManual.jpg"
+				document.getElementById("teste").innerHTML = "Manual do Usuário"
 				document.getElementById("id5").style.backgroundColor = "rgb(50, 178, 221)"
 				document.getElementById("id1").style.backgroundColor = "#555"
 				document.getElementById("id2").style.backgroundColor = "#555"
@@ -100,15 +105,21 @@
 			<h1>Equipes</h1>
 
 			<div class="icon-bar">
-			  <a id="id1" href="#" title="Redes de Computadores" onclick="mudaImagem(1)"><i class="fa fa-podcast" aria-hidden="true"></i></i></a> 
+			  <a id="id1" href="#" title="Redes de Computadores" onclick="mudaImagem(1)"><i class="fa fa-podcast" aria-hidden="true"></i></i></a>
 			  <a id="id2" href="#" title="Programação com Bando de Dados" onclick="mudaImagem(2)"><i class="fa fa-folder-open" aria-hidden="true"></i></a> 
 			  <a id="id3" href="#" title="Manutenção de Computadores" onclick="mudaImagem(3)"><i class="fa fa-wrench" aria-hidden="true"></i></i></a> 
 			  <a id="id4" href="#" title="Autoria Web" onclick="mudaImagem(4)"><i class="fa fa-file-code-o" aria-hidden="true"></i></i></a>
 			  <a id="id5" href="#" title="Manual do Projeto" onclick="mudaImagem(5)"><i class="fa fa-book" aria-hidden="true"></i></a>
 			</div>
+			
 			<img id="imagem" src="img/projeto.png">
+			<div class="teste"><h2 id="teste"></h2></div>
 		</div>
 	</div><!-- /container -->
+	
+
+
+
 	<script src="js/classie.js"></script>
 	<script src="js/gnmenu.js"></script>
 	<script>

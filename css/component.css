@@ -339,6 +339,14 @@ input.gn-search:focus {
 	margin-left: 30%;
 	margin-top: 30px;
 }
+#teste {
+	color: white;
+}
+
+.teste {
+	width: 700px;
+	margin-left: 100px;
+}
 
 @media screen and (max-width: 422px) { 
 	.gn-menu-wrapper.gn-open-all {
@@ -352,6 +360,16 @@ input.gn-search:focus {
 		height: 150px;
 		width: 320px;
 		margin-left: 10%;
+	}
+
+	.teste{
+		margin-left: 10px;
+		width: 350px;
+	}
+
+	#teste {
+		font-size: 20px;
+		text-align: justify;
 	}
 
 	.gn-menu-wrapper.gn-open-all .gn-scroller {
